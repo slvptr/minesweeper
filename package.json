@@ -4,10 +4,7 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint": "eslint . --ext .ts"
+    "build": "react-scripts build"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
