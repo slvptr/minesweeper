@@ -1,8 +1,11 @@
 {
-  "name": "sapper",
+  "name": "minesweeper",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://slvptr.github.io/minesweeper",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
@@ -15,6 +18,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "classnames": "^2.3.2",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
