@@ -1,0 +1,108 @@
+@use "sass:math";
+@import "src/assets/styles/variables";
+
+.playing-field {
+  background-color: $main-bg-color;
+
+  .bar {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    &__bomb-counter {
+      margin-left: 4px;
+    }
+
+    &__smiley-button {
+      margin: 2px;
+    }
+
+    &__timer {
+      margin-right: 4px;
+    }
+  }
+
+  .horizontal-border {
+    height: 10px;
+    width: 256px;
+    background-image: url("../../assets/images/border-horizontal.png");
+  }
+
+  &__top-section {
+    display: flex;
+
+    .left-angle, .right-angle {
+      width: 10px;
+      height: 10px;
+    }
+
+    .left-angle {
+      background-image: url("../../assets/images/top-left-angle.png");
+    }
+
+    .right-angle {
+      background-image: url("../../assets/images/top-right-angle.png");
+    }
+  }
+
+  &__control-section {
+    display: flex;
+
+    .left-border, .right-border {
+      width: 10px;
+      background-image: url("../../assets/images/border-vertical.png");
+      background-size: 100% 100%;
+    }
+  }
+
+  &__intermediate-section {
+    display: flex;
+
+    .left-cross, .right-cross {
+      width: 10px;
+      height: 10px;
+    }
+
+    .left-cross {
+      background-image: url("../../assets/images/left-intermediate.png");
+    }
+
+    .right-cross {
+      background-image: url("../../assets/images/right-intermediate.png");
+    }
+  }
+
+  &__middle-section {
+    display: flex;
+
+    .left-border, .right-border {
+      width: 10px;
+      height: 256px;
+      background-image: url("../../assets/images/border-vertical.png");
+      background-size: 100% 100%;
+    }
+
+    .grid {
+      display: grid;
+      grid-template: repeat(16, 16px) / repeat(16, 16px);
+    }
+  }
+
+  &__bottom-section {
+    display: flex;
+
+    .left-angle, .right-angle {
+      width: 10px;
+      height: 10px;
+    }
+
+    .left-angle {
+      background-image: url("../../assets/images/bottom-left-angle.png");
+    }
+
+    .right-angle {
+      background-image: url("../../assets/images/bottom-right-angle.png");
+    }
+  }
+}

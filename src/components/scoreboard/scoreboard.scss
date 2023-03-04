@@ -1,0 +1,49 @@
+.scoreboard {
+  display: flex;
+
+  &__icon {
+    width: 13px;
+    height: 23px;
+    background-image: url("../../assets/images/minesweeper-sprites.png");
+
+    &--0 {
+      background-position-x: 13px;
+    }
+
+    &--1 {
+      background-position-x: 0;
+    }
+
+    &--2 {
+      background-position-x: -14px;
+    }
+
+    &--3 {
+      background-position-x: -28px;
+    }
+
+    &--4 {
+      background-position-x: -42px;
+    }
+
+    &--5 {
+      background-position-x: -56px;
+    }
+
+    &--6 {
+      background-position-x: -70px;
+    }
+
+    &--7 {
+      background-position-x: -84px;
+    }
+
+    &--8 {
+      background-position-x: -98px;
+    }
+
+    &--9 {
+      background-position-x: -112px;
+    }
+  }
+}

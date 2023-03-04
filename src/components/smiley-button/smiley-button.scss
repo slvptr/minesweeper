@@ -1,0 +1,22 @@
+.smiley-icon {
+  width: 26px;
+  height: 26px;
+  background-image: url("../../assets/images/minesweeper-sprites.png");
+  background-position-y: -25px;
+
+  &:active {
+    background-position-x: -28px;
+  }
+
+  &--scared {
+    background-position-x: -54px;
+  }
+
+  &--won {
+    background-position-x: -81px;
+  }
+
+  &--game-over {
+    background-position-x: -108px;
+  }
+}

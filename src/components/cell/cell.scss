@@ -1,0 +1,85 @@
+@import "src/assets/styles/variables";
+
+.cell-icon {
+  aspect-ratio: 1 / 1;
+  background-image: url("../../assets/images/minesweeper-sprites.png");
+
+  &--one {
+    background-position-y: 16px;
+  }
+
+  &--two {
+    background-position-x: -17px;
+    background-position-y: 16px;
+  }
+
+  &--three {
+    background-position-x: -34px;
+    background-position-y: 16px;
+  }
+
+  &--four {
+    background-position-x: -51px;
+    background-position-y: 16px;
+  }
+
+  &--five {
+    background-position-x: -68px;
+    background-position-y: 16px;
+  }
+
+  &--six {
+    background-position-x: -85px;
+    background-position-y: 16px;
+  }
+
+  &--seven {
+    background-position-x: -102px;
+    background-position-y: 16px;
+  }
+
+  &--eight {
+    background-position-x: -119px;
+    background-position-y: 16px;
+  }
+
+  &--locked {
+    background-position-y: 33px;
+    z-index: 2;
+  }
+
+  &--empty {
+    background-position-x: -17px;
+    background-position-y: 33px;
+  }
+
+  &--flag {
+    background-position-x: -34px;
+    background-position-y: 33px;
+  }
+
+  &--locked-question {
+    background-position-x: -51px;
+    background-position-y: 33px;
+  }
+
+  &--question {
+    background-position-x: -68px;
+    background-position-y: 33px;
+  }
+
+  &--bomb {
+    background-position-x: -85px;
+    background-position-y: 33px;
+  }
+
+  &--bomb-exploded {
+    background-position-x: -102px;
+    background-position-y: 33px;
+  }
+
+  &--bomb-mistaken {
+    background-position-x: -119px;
+    background-position-y: 33px;
+  }
+}
